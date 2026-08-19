@@ -1,16 +1,21 @@
-# Protocolos-de-Red
-Repositorio usado para la asignatura de "Protocolos de internet" dictada en la UCA
+# Estructura de Datos Con Petes 
+# Para nada este README fue copiado de protocolos
+Repositorio usado para la asignatura de "Estructura de Datos" dictada en la UCA 
 ### Como trabajamos?
 Hagamos asi, tengamos cada uno de nosotros nuestra propia branch. Trabajemos sobre nuestras branches y cuando tengamos algo lo pusheamos a la main, asi no tenemos que andar quejandonos con conflictos.
+## En palabras de LOL cada uno por su linea y esperar los ganks
+
 ### Como organizamos los archivos?.
-Hagamos lo siguiente: las carpetas que vamos a tener que saen TP1/TP2/... , a partir de ahi, adentro tenemos lo siguiente: EL jupyter. Una carpeta por cada punto, por ejemplo: carpeta A1, carpeta A2, y asi, cada uno con sus correspondientes codigos en C. Eso por mas que los codigos se repitan, para no matarnos con los nombres. Ademas tengamos tambien otra carpeta por cualquier tipo de trabajo que no sea del jupyter (como la otra vez que mandaron el de "Ejercicio Grupal")
+### Igual que como te compras los items en la tienda, igual de ordenadito
+Hagamos lo siguiente: las carpetas que vamos a tener que saen TP1/TP2/...  
 
 ---
-### Paso a paso que hacer al trabajar
-Primero: pulleamos el main no vaya a ser que alguien haya subido algo
+### Paso a paso que hacer al trabajar, BASICAMENTE pegarle al nexo para ganar
+## Santi esto es para vos
+Primero: pulleamos el main no vaya a ser que alguien haya subido algo 
 
 =======
-### Guia de comandos rapida
+### Guia de comandos rapida, Como una casual con bots
 Antes de empezar, pulleamos el main.
 ```bash
 git checkout main
@@ -19,7 +24,7 @@ git pull origin main
 
 Creamos la branch, por si no lo hicimos todavia
 ```bash
-git checkout -b nombre-de-tu-branch
+git checkout -b nombre-de-tu-branch ejemplo fan de irelia
 ```
 Con un `git branch` chequeas que estes donde tenes que estar \
 Ahora vinculas la branch con lo que tenes vos. Pueden tener una carpeta con la branch suya y otro con el main si quieren.
@@ -36,13 +41,13 @@ git checkout nombre-de-tu-branch
 git merge main
 ```
 ---
-### Resumen rapido
+### Resumen rapido, Como una Partida contra un Locke 10/0
 ```bash
 git checkout main
 git pull origin main
 git checkout -b mi-branch
 git add .
-git commit -m "Descripción del cambio"
+git commit -m "Descripción del cambio por ejemplo smolder LPM"
 git push -u origin mi-branch
 ```
 Creamos cada uno nuestra rama con nuestor nombre
@@ -63,3 +68,4 @@ Entonces, cada vez que arrancas:
 git checkout nombre-de-tu-rama
 git pull origin nombre-de-tu-rama
 ```
+# Espero que les haya gustado mi acople con el Lol
