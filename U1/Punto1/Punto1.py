@@ -58,12 +58,12 @@ def BuscarVecindadDer(arr):
 
 def BuscarVecindadIz(arr):
     pos=[]
-    for col in range(len(arr)):
-        for dato in range(len(arr[col])):
-            if (dato < col and int(arr[col][dato]) == 1):
+    for fila in range(len(arr)):
+        for dato in range(len(arr[fila])):
+            if (dato < fila and int(arr[fila][dato]) == 1):
                 #encontre vecindad izquierda
-                print(col,dato)
-                tupla=col,dato
+                print(fila,dato)
+                tupla=fila,dato
                 pos.append(tupla)
     return pos
 
