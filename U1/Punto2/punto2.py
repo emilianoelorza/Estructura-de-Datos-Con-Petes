@@ -12,6 +12,16 @@ def es_reflexiva(estructura):
         print("no es reflexiva")
         return False
 
+def es_reflexiva_gonza(estructura):
+    count=0
+    for x in estructura['P']:
+        if not(x in estructura['E'][x] and x in estructura['E']):
+            print("No es reflexiva")
+            return False
+    print("Es reflexiva")
+    return True;    
+            
+
 def es_Simetrica(estructura):
     for x in estructura['P']:
         for y in estructura['E'][x]:
@@ -69,7 +79,7 @@ def es_transitiva(estructura):
         print("no es transitiva")
 
 def main():
-    f = open('archivosEjemplos/archivos_ej1/01.json')
+    f = open('archivosEjemplos/archivos_ej2/01.json')
     estructura = json.load(f)
 
     print(" ")
