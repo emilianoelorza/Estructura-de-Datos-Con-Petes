@@ -73,7 +73,7 @@ def BuscarVecindadIz(arr):
 
 
 def main():
-    with open("02.csv", "r") as f:
+    with open("archivosEjemplos/archivos_ej1/02.csv", "r") as f:
         ##print(f.read())
         datos = f.read()
 
@@ -99,6 +99,7 @@ def main():
     print("  ")
     print("Maximales: ")
     print(BuscarMaximal(arr))
+    
 
 
 main()

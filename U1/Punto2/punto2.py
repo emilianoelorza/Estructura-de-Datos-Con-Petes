@@ -69,7 +69,7 @@ def es_transitiva(estructura):
         print("no es transitiva")
 
 def main():
-    f = open('01.json')
+    f = open('archivosEjemplos/archivos_ej1/01.json')
     estructura = json.load(f)
 
     print(" ")
