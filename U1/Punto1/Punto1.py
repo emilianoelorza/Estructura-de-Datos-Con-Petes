@@ -1,4 +1,6 @@
-#Minimal:
+#Minimal: nadia apunta a el
+#En la matriz de adyacencia dirigiada, la fila representa hacia
+#donde apunta el nodo y la columna representa quienes apuntan al nodo.
 def BuscarMinimal(arr):
     count=0
     col=0
@@ -20,7 +22,7 @@ def BuscarMinimal(arr):
             fila=0
             
     return minimales
-
+#Maximal: no apunta a nadie
 def BuscarMaximal(arr):
     count=0
     col=0
