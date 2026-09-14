@@ -1,4 +1,6 @@
-#Minimal:
+#Minimal: nadia apunta a el
+#En la matriz de adyacencia dirigiada, la fila representa hacia
+#donde apunta el nodo y la columna representa quienes apuntan al nodo.
 def BuscarMinimal(arr):
     count=0
     col=0
@@ -20,7 +22,7 @@ def BuscarMinimal(arr):
             fila=0
             
     return minimales
-
+#Maximal: no apunta a nadie
 def BuscarMaximal(arr):
     count=0
     col=0
@@ -58,12 +60,12 @@ def BuscarVecindadDer(arr):
 
 def BuscarVecindadIz(arr):
     pos=[]
-    for col in range(len(arr)):
-        for dato in range(len(arr[col])):
-            if (dato < col and int(arr[col][dato]) == 1):
+    for fila in range(len(arr)):
+        for dato in range(len(arr[fila])):
+            if (dato < fila and int(arr[fila][dato]) == 1):
                 #encontre vecindad izquierda
-                print(col,dato)
-                tupla=col,dato
+                print(fila,dato)
+                tupla=fila,dato
                 pos.append(tupla)
     return pos
 
@@ -71,7 +73,7 @@ def BuscarVecindadIz(arr):
 
 
 def main():
-    with open("02.csv", "r") as f:
+    with open("archivosEjemplos/archivos_ej1/02.csv", "r") as f:
         ##print(f.read())
         datos = f.read()
 
@@ -97,6 +99,7 @@ def main():
     print("  ")
     print("Maximales: ")
     print(BuscarMaximal(arr))
+    
 
 
 main()

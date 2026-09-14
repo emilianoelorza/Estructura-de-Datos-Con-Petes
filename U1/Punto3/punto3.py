@@ -48,7 +48,7 @@ def AlgoritmoPaso(est,p_inicial,p_final):
         print(i)
 
 def main():
-    f = open('02.json', 'r')
+    f = open('archivosEjemplos/archivos_ej2/02.json', 'r')
     est = json.load(f)
 
     AlgoritmoPaso(est,est["P"][44],est["P"][20])

@@ -12,6 +12,16 @@ def es_reflexiva(estructura):
         
         return False
 
+def es_reflexiva_gonza(estructura):
+    count=0
+    for x in estructura['P']:
+        if not(x in estructura['E'][x] and x in estructura['E']):
+            print("No es reflexiva")
+            return False
+    print("Es reflexiva")
+    return True;    
+            
+
 def es_Simetrica(estructura):
     for x in estructura['P']:
         for y in estructura['E'][x]:
@@ -82,9 +92,6 @@ def es_Equivalencia(estructura):
         print("no es una relacion de equivalencia")
 
 def main():
-    f = open('02.json')
-    estructura = json.load(f)
-
     print(" ")
     print(" ")
     if(es_reflexiva(estructura)== True):
